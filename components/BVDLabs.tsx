@@ -47,7 +47,7 @@ const BVDLabs = () => {
           </div>
         </main>
       </section>
-      <div className="bottomGrad absolute w-full bottom-0 h-28 z-0"></div>
+      <div className="bottomGrad absolute w-full left-0 bottom-0 h-28 z-0"></div>
     </div>
   );
 };
