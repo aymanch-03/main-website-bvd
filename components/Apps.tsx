@@ -66,7 +66,7 @@ const Apps = () => {
       <main className="container px-0 py-20 mx-auto relative z-10">
         <section className="grid w-full h-full mx-auto gap-3">
           <div className="w-full xl:grid-cols-4 lg:grid-cols-2 gap-3 grid-cols-1 grid">
-            <div className="col-span-2">
+            <div className="col-span-2 space-y-5">
               <h1 className="font-primary lg:text-7xl md:text-6xl md:leading-[4.5rem] text-5xl text-black lg:leading-[6rem] leading-[3rem] xl:text-left text-center">
                 Once you go BVD, <br />
                 You never go back.
@@ -75,13 +75,13 @@ const Apps = () => {
                 Buy & join us
               </button>
             </div>
-            <div className="col-span-2 lg:grid-cols-2 grid grid-cols-1 xl:place-items-start place-items-center  gap-3 w-full h-full lg:px-0 px-7">
+            <div className="col-span-2 md:grid-cols-2 grid grid-cols-1 xl:place-items-start place-items-center  gap-3 w-full h-full lg:px-0 px-7">
               {appSquares2.map(({ imageSrc, title }: any, index) => (
                 <Card1 key={index} imageSrc={imageSrc} title={title} />
               ))}
             </div>
           </div>
-          <div className="w-full grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 h-full gap-3 xl:place-items-start place-items-center lg:px-0 px-7">
+          <div className="w-full grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 h-full gap-3 xl:place-items-start place-items-center lg:px-0 px-7">
             {appSquares1.map(({ imageSrc, title }: any, index) => (
               <Card2 key={index} imageSrc={imageSrc} title={title} />
             ))}
