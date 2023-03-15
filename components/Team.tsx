@@ -163,7 +163,7 @@ const Team = () => {
                 />{" "}
               </div>
               <div className="px-4 py-4 border-t-2 bg-bg border-t-black space-y-1">
-                <div className=" text-black md:text-2xl text-xl    flex justify-between items-center">
+                <div className=" text-black md:text-3xl text-2xl    flex justify-between items-center">
                   <p className="font-secondary">{memberName}</p>
                   <Link href="/" className="group">
                     <BsTwitter
