@@ -4,12 +4,12 @@ import Image from "next/image";
 const Apps = () => {
   const appSquares1 = [
     {
-      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Gacha.png",
-      title: "Gacha",
+      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Trait Swap.png",
+      title: "Trait Swapper",
     },
     {
-      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Rarity.png",
-      title: "Rarity",
+      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Staking.png",
+      title: "Staking",
     },
     {
       imageSrc: "/Website Images/Page 2 - Apps/App Squares/Market.png",
@@ -22,12 +22,12 @@ const Apps = () => {
   ];
   const appSquares2 = [
     {
-      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Trait Swapper.png",
-      title: "Trait Swapper",
+      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Gacha.png",
+      title: "Gacha",
     },
     {
-      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Staking.png",
-      title: "Staking",
+      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Rarity.png",
+      title: "Rarity",
     },
   ];
   const Card1 = ({ imageSrc, title }: any) => (
@@ -63,25 +63,27 @@ const Apps = () => {
       <div className="topGrad absolute w-full top-0 h-20 z-20"></div>
 
       <div className=" bg-backgroundApps bg-no-repeat bg-cover bg-center absolute h-full w-full z-0"></div>
-      <main className="container px-3 py-20 mx-auto relative z-10">
-        <section className="grid xl:grid-cols-2 grid-cols-1 w-full h-full items-center justify-between mx-auto place-items-center gap-3">
-          <div className="space-y-8 w-full">
-            <h1 className="font-primary lg:text-7xl md:text-6xl md:leading-[4.5rem] text-5xl text-black lg:leading-[6rem] leading-[3rem] xl:text-left text-center">
-              Once you go BVD, <br />
-              You never go back.
-            </h1>
-            <button className="flex xl:mx-0 justify-center mx-auto text-center font-primary text-primary border-2 border-primary rounded-full bg-bg px-9 py-3 text-xl hover:bg-primary hover:text-bg transition-all duration-600">
-              Buy & join us
-            </button>
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 h-full gap-3 xl:place-items-start place-items-center lg:px-0 px-7">
+      <main className="container px-0 py-20 mx-auto relative z-10">
+        <section className="grid w-full h-full mx-auto gap-3">
+          <div className="w-full xl:grid-cols-4 lg:grid-cols-2 gap-3 grid-cols-1 grid">
+            <div className="col-span-2">
+              <h1 className="font-primary lg:text-7xl md:text-6xl md:leading-[4.5rem] text-5xl text-black lg:leading-[6rem] leading-[3rem] xl:text-left text-center">
+                Once you go BVD, <br />
+                You never go back.
+              </h1>
+              <button className="flex xl:mx-0 justify-center mx-auto text-center font-primary text-primary border-2 border-primary rounded-full bg-bg px-9 py-3 text-xl hover:bg-primary hover:text-bg transition-all duration-600">
+                Buy & join us
+              </button>
+            </div>
+            <div className="col-span-2 lg:grid-cols-2 grid grid-cols-1 xl:place-items-start place-items-center  gap-3 w-full h-full lg:px-0 px-7">
               {appSquares2.map(({ imageSrc, title }: any, index) => (
-                <Card2 key={index} imageSrc={imageSrc} title={title} />
+                <Card1 key={index} imageSrc={imageSrc} title={title} />
               ))}
             </div>
           </div>
-          <div className="md:grid-cols-2 grid grid-cols-1 mx-auto items-center justify-between gap-3 w-full h-full xl:place-items-start place-items-center	lg:px-0 px-7">
+          <div className="w-full grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 h-full gap-3 xl:place-items-start place-items-center lg:px-0 px-7">
             {appSquares1.map(({ imageSrc, title }: any, index) => (
-              <Card1 key={index} imageSrc={imageSrc} title={title} />
+              <Card2 key={index} imageSrc={imageSrc} title={title} />
             ))}
           </div>
         </section>
