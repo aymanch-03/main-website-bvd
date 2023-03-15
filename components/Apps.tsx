@@ -4,7 +4,7 @@ import Image from "next/image";
 const Apps = () => {
   const appSquares1 = [
     {
-      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Trait Swap.png",
+      imageSrc: "/Website Images/Page 2 - Apps/App Squares/Trait Swapper.png",
       title: "Trait Swapper",
     },
     {
