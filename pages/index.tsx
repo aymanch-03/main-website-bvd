@@ -6,7 +6,7 @@ import Immortalised from "@/components/Immortalised";
 import Landing from "@/components/Landing";
 import Links from "@/components/Links";
 import Navbar from "@/components/Navbar";
-// import PartnerSection from '@/components/PartnerSection'
+import PartnerSection from "@/components/PartnerSection";
 import Partnerships from "@/components/Partnerships";
 import Team from "@/components/Team";
 import Head from "next/head";
@@ -24,7 +24,7 @@ export default function Home() {
         <Landing />
         <Apps />
         <Partnerships />
-        {/* <PartnerSection /> */}
+        <PartnerSection />
         <About />
         <Links />
         <Immortalised />
