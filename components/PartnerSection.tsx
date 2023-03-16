@@ -205,7 +205,7 @@ const PartnerSection = () => {
 
   return (
     <div className="mx-auto bg-partnerBg bg-no-repeat bg-contain md:bg-left overflow-hidden">
-      <section className="lg:flex items-center block justify-between w-full mb-20 lg:ml-[38%] md:ml-[35%] container mt-0  md:mt-28 mx-auto">
+      <section className=" relative lg:flex items-center block justify-between w-full mb-20 lg:ml-[38%] md:ml-[35%] container mt-0  md:mt-28 mx-auto">
         <Swiper
           breakpoints={breakpoints}
           pagination={{
@@ -219,6 +219,19 @@ const PartnerSection = () => {
           modules={[Navigation, Pagination]}
           className="mySwiper mx-auto h-max relative w-3/4 md:overflow-hidden overflow-visible !py-[60px] md:!px-[15px] !px-8"
         >
+          <div
+            ref={navigationPrevRef}
+            className=" w-max p-2 bg-bg  border-black border rounded-full absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer hover:bg-bg/50 transition-all duration-900 ml-6"
+          >
+            <BsArrowLeftShort size={30} />
+          </div>
+
+          <div
+            ref={navigationNextRef}
+            className=" w-max p-2 bg-bg  border border-black rounded-full absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer hover:bg-bg/50 transition-all duration-500 -mr-6"
+          >
+            <BsArrowRightShort size={30} />
+          </div>
           {shuffledPartnerCats.map(
             ({ imageSrc, title }: any, index: React.Key | null | undefined) => {
               return (
@@ -243,19 +256,6 @@ const PartnerSection = () => {
               );
             }
           )}
-          <div
-            ref={navigationPrevRef}
-            className=" w-max p-2 bg-bg  border-black border rounded-full absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer hover:bg-bg/50 transition-all duration-900 ml-6"
-          >
-            <BsArrowLeftShort size={30} />
-          </div>
-
-          <div
-            ref={navigationNextRef}
-            className=" w-max p-2 bg-bg  border border-black rounded-full absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer hover:bg-bg/50 transition-all duration-500 -mr-6"
-          >
-            <BsArrowRightShort size={30} />
-          </div>
         </Swiper>
       </section>
     </div>
